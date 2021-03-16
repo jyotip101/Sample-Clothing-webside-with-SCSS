@@ -8,7 +8,8 @@
         "../scss/_responsive.scss",
         "../scss/_home.scss",
         "../scss/_newProduct.scss",
-        "../scss/_offer.scss"
+        "../scss/_offer.scss",
+        "../scss/_contact.scss"
     ],
     "names": [],
     "file": "style.css"
