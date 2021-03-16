@@ -12,6 +12,9 @@
             & h2{
                 color: $second-color;
             }
+            & p{
+                margin: auto 5rem;
+            }
             & h2 span{
                 text-decoration: line-through;
                 color: set-txt-color($first-color);
@@ -20,6 +23,7 @@
     .offer_items2{
         margin: auto 0; 
         text-align: left;
+        cursor: pointer;
     }
     
 }
