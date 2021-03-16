@@ -9,7 +9,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: auto 5rem;
-        
+        text-transform: capitalize;
         padding: 0;
         width: fit-content;
         height: fit-content;
@@ -19,21 +19,35 @@
     .socal-icon{ 
          
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin: 5rem 5rem 5rem 0;
-        
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2rem;
         padding: 0;
-        width: fit-content;
+        width: fit-content; 
         height: fit-content;
         color: set-txt-color($first-color);
+        
+        & h1{
+            text-transform: uppercase;
+        }
+        &_links{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            
+            width: fit-content; 
+            height: fit-content;
+            color: set-txt-color($first-color);
+        }
     }
 
     a{
-        
         cursor: pointer;
-    }
-    footer{
-        margin: auto 2rem;
-        text-align: left;
-    }
+        padding: 0.5rem;
+    } 
+}
+
+footer{
+    padding: 0.5rem 0rem;
+    text-align: center;
+    color: $first-color;
+    background-color: $second-color;
 }
