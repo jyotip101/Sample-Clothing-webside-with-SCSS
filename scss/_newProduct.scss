@@ -53,9 +53,10 @@
         grid-template-columns: repeat(3, 1fr);
         margin: 0 auto;
         align-items: center;
+       
         & .img{ 
             height: 70vh;
             margin: 0 0.3rem;
         }
-        }
+    }
 }
