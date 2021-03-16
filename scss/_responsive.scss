@@ -1,0 +1,50 @@
+@include media-md{
+    .menu-bar{
+        visibility: hidden;
+    }
+
+    .nav{
+        visibility: visible; 
+        box-shadow: 5px 5px 5px rgba(236, 231, 231, 0.87);
+
+        .menu-nav1{
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            left: 0;
+            background-color: $first-color;
+            text-align: center;
+
+            &_item{
+                display: inline;
+                padding-right: 2rem;
+            }
+
+            &_link{ 
+                text-transform: capitalize;
+                font-size: 1rem;
+            }
+        }
+        .menu-nav2{
+            visibility: visible;
+            position: fixed; 
+            top: 0;
+            font-weight: 400;
+            margin-top: 1rem;
+            text-align: right;
+            display: block;  
+            right: 0; 
+
+            &_item{
+                display: inline;
+                padding-right: 2rem;
+            }
+
+            &_link{ 
+                text-transform: capitalize;
+                font-size: 1rem;
+            }
+        }
+    }
+ 
+}

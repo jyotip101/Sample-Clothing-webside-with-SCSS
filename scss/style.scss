@@ -1,0 +1,35 @@
+@import 'config'; 
+@import 'menu';
+@import 'responsive';
+@import 'home';
+@import 'newProduct';
+@import 'offer';
+
+body{
+    color: set-txt-color($first-color);
+    background-color: $first-color;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1,h2,h3{
+    font-weight: 400;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: set-txt-color($first-color); 
+}
+
+header{
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}

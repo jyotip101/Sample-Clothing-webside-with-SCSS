@@ -1,0 +1,26 @@
+.offer{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        
+    &_items1{
+            margin: auto 0;  
+            
+            & h1, p, h2{
+                text-align: center;
+            }
+            & h2{
+                color: $second-color;
+            }
+            & h2 span{
+                text-decoration: line-through;
+                color: set-txt-color($first-color);
+            }  
+        }
+    .offer_items2{
+        margin: auto 0; 
+        text-align: left;
+    }
+    
+}

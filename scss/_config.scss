@@ -1,0 +1,27 @@
+$first-color:#fff;
+$second-color: rgb(252, 13, 152);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-txt-color($color){
+    @if(lightness($color) > 40%){
+        @return #0f0f0f;
+    }@else{
+        @return #fff;
+    }
+}
+
+@mixin media-md{
+    @media screen and (min-width: 900px){
+        @content;
+        
+    }
+} 

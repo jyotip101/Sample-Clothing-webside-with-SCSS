@@ -1,0 +1,61 @@
+.latest-product{
+    height: 48vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    .latest-product-image{
+        text-align: center;
+        height: 2vh;
+        margin: 0 20rem 1rem 20rem;
+        font-weight: 500;
+    }
+
+    &_items{
+        width: 100%; 
+        }
+    &_item{ 
+        display: grid; 
+        grid-template-columns:repeat(2, 1fr);
+        margin: 0 10vw;
+        padding: 0.5rem;
+        & .latest-img{
+                height: 30vw;
+                width: 100%;
+            }
+        
+    }
+    img{
+        padding: 00.5rem;
+        width: 100%;
+        height: 15vw;
+    } 
+}
+
+.new-brand{ 
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+     
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 1rem;
+    }
+    p{
+        text-align: center;
+        margin: 0 20rem 1rem 20rem;
+    }
+    .new-brand_items{ 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        align-items: center;
+        & .img{ 
+            height: 70vh;
+            margin: 0 0.3rem;
+        }
+        }
+}
