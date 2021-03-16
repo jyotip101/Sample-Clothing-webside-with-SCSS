@@ -13,7 +13,7 @@ $second-color: rgb(252, 13, 152);
 
 @function set-txt-color($color){
     @if(lightness($color) > 40%){
-        @return #0f0f0f;
+        @return #585858;
     }@else{
         @return #fff;
     }

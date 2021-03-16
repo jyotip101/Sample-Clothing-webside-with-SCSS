@@ -1,0 +1,32 @@
+.footer-links{
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #f6f6f6;
+
+    .footer-links_items{ 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto auto;
+        
+        padding: 0;
+        width: fit-content;
+        height: fit-content;
+        color: set-txt-color($first-color);
+    }
+
+    .socal-icon{ 
+         
+        margin: auto auto;
+        display: flex;
+        padding: 0;
+        width: fit-content;
+        height: fit-content;
+        color: set-txt-color($first-color);
+    }
+
+    footer{
+        text-align: left;
+    }
+}
