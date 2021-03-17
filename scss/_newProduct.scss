@@ -17,8 +17,7 @@
     &_item{ 
         display: grid; 
         grid-template-columns:repeat(2, 1fr);
-        margin: 0 10vw;
-        padding: 0.5rem;
+        margin: 0 10vw; 
         & .latest-img{
                 height: 30vw;
                 width: 100%;
@@ -26,11 +25,19 @@
         
     }
     img{
-        padding: 00.5rem;
+        padding: 0.5rem;
         width: 100%;
         height: 15vw;
         cursor: pointer;
+        
+         
     } 
+    img:hover{
+        padding: 0.2rem;
+        @include transition-ease;
+    }
+
+
 }
 
 .new-brand{ 
@@ -52,12 +59,18 @@
     .new-brand_items{ 
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin: 0 auto;
+        margin: 2rem;
         align-items: center;
        
-        & .img{ 
-            height: 70vh;
-            margin: 0 0.3rem;
+        img{  
+            cursor: pointer; 
+            padding: 2rem;
+            width: 100%;
         }
+        img:hover{
+            padding: 1rem;
+            @include transition-ease
+        }
+
     }
 }
