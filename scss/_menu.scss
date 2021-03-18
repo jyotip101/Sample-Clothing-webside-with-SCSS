@@ -127,8 +127,11 @@
             font-weight: 400; 
             @include transition-ease;
             color: set-txt-color($first-color);
+            
             &:hover{
                 color: $second-color;
+                @include transition-ease;
+                
             }
         }
     } 

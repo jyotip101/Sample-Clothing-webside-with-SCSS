@@ -29,7 +29,14 @@
             color: #ffffff; 
             border-radius: 5rem;  
             cursor: pointer;
+            @include transition-ease;
+            
             // text-shadow: 1px 7px 5px #000000;
+            &:hover{
+                color: rgb(241, 123, 182);
+                @include transition-ease;
+            }
+        
         }
     }
 }
