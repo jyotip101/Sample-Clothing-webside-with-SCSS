@@ -15,9 +15,17 @@
         width: fit-content;
         height: fit-content;
         color: set-txt-color($first-color);
+        @include transition-ease;
 
-        .footer-links_item{
+        & .footer-links_item{
             margin: 0.5rem;
+            @include transition-ease;
+                
+            a:hover{
+                color: $second-color; 
+                border-color: $second-color;
+                @include transition-ease;
+            } 
         }
     }
 
@@ -31,16 +39,18 @@
         
         & h1{
             text-transform: uppercase;
-            text-align: center;
+            text-align: left;
+            margin-left: 1rem;
+            font-weight: 900;
         }
         &_links{
-            display: grid;
+            display: grid; 
+            width: fit-content;
+            height: fit-content;
             grid-template-columns: repeat(3, 1fr);
-             
             color: set-txt-color($first-color);
             margin: 00.5rem;
-            
-        
+             
         }
     } 
  
