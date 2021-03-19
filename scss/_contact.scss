@@ -4,11 +4,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: #f6f6f6;
+    @include transition-ease;
 
     .footer-links_items{ 
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin: auto auto;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2rem auto;
         text-transform: capitalize;
         
         padding: 0;
@@ -33,7 +34,7 @@
          
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin: auto 2rem;
+        margin: 2rem auto;
         padding: 0; 
         color: set-txt-color($first-color);
         
