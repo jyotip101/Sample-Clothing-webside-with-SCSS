@@ -18,6 +18,9 @@
         color: set-txt-color($first-color);
         @include transition-ease;
 
+        & h1{
+            font-weight: 900;
+        }
         & .footer-links_item{
             margin: 0.5rem;
             @include transition-ease;
@@ -36,7 +39,7 @@
         grid-template-columns: repeat(1, 1fr);
         margin: 2rem auto;
         padding: 0; 
-        color: set-txt-color($first-color);
+        color: set-txt-color($first-color); 
         
         & h1{
             text-transform: uppercase;
